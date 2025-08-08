@@ -1,0 +1,326 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+header {
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+}
+nav a {
+    margin: 5px;
+    text-decoration: none;
+}
+
+/* Optional polish */
+.navbar-nav .nav-link {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    color: #fff;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.list-group-item {
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: none;
+}
+
+.blockquote {
+    border-left: 5px solid #0d6efd;
+    padding-left: 15px;
+    margin: 30px 0;
+}
+
+iframe {
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-outline-primary {
+    font-weight: 500;
+}
+
+/* Smooth image loading */
+img {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Branded box highlight */
+.border-start.border-primary {
+    border-width: 5px !important;
+}
+
+/* Responsive section spacing */
+@media (max-width: 767px) {
+    .fs-5 {
+        font-size: 1rem !important;
+    }
+}
+
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.card-img-top:hover {
+    transform: scale(1.03);
+}
+.card-body {
+    padding: 1rem 1.25rem;
+}
+
+form input, form textarea {
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+form label {
+  color: #444;
+}
+
+button[type="submit"] {
+  font-weight: 500;
+}
+
+
+img {
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+img:hover {
+  transform: scale(1.02);
+}
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.card-title {
+  font-weight: 600;
+}
+
+/* Play Pedagogies Page Unique Styling */
+.playped-section {
+  background: #fff;
+}
+
+.playped-header h1 {
+  font-size: 2.5rem;
+}
+
+.playped-img {
+  transition: transform 0.3s ease-in-out;
+}
+.playped-img:hover {
+  transform: scale(1.03);
+}
+
+.playped-list li {
+  padding-left: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.playped-card h5 {
+  font-weight: 600;
+}
+
+.playped-card {
+  transition: all 0.3s ease;
+}
+.playped-card:hover {
+  background-color: #e9f4ff;
+  transform: translateY(-5px);
+}
+
+.playped-cta {
+  margin-top: 3rem;
+}
+
+
+.childdev-img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.childdev-card h5 {
+  font-weight: 600;
+}
+
+.childdev-card:hover {
+  background-color: #f0f8ff;
+  transition: 0.3s ease;
+  transform: translateY(-5px);
+}
+
+.childdev-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.childdev-header h1 {
+  font-size: 2.5rem;
+}
+
+
+/* Diversity & Inclusion Page */
+.diversity-header h1 {
+  font-size: 2.5rem;
+}
+.diversity-card h5 {
+  font-weight: 600;
+}
+.diversity-card:hover {
+  background-color: #f0f8ff;
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+.diversity-list li {
+  padding-left: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Quality Standards Page */
+.quality-header h1 {
+  font-size: 2.5rem;
+}
+
+.quality-card:hover {
+  background-color: #e9f4ff;
+  transition: all 0.3s ease;
+  transform: translateY(-5px);
+}
+
+.quality-card h5 {
+  font-size: 1.1rem;
+}
+
+.quality-grid i {
+  color: #0d6efd;
+}
+
+.quality-reflection h3 {
+  font-weight: 600;
+}
+
+
+/* Teaching Ethics Page */
+.ethics-header h1 {
+  font-size: 2.5rem;
+}
+.ethics-card h5 {
+  font-weight: 600;
+}
+.ethics-card:hover {
+  background-color: #e9f4ff;
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+.ethics-list li {
+  padding-left: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Health & Wellbeing Page */
+.health-header h1 {
+  font-size: 2.5rem;
+}
+.health-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
+.health-section i {
+  color: #0d6efd;
+}
+.health-section .btn {
+  margin-top: 1rem;
+}
+
+
+/* Feedback & Evaluation Page */
+.feedback-header h1 {
+  font-size: 2.5rem;
+}
+.feedback-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.4rem;
+}
+.feedback-section i {
+  color: #0d6efd;
+}
+.feedback-section .btn {
+  margin-top: 1rem;
+}
+
+/* Reflective Practice Page */
+.reflective-header h1 {
+  font-size: 2.5rem;
+}
+.reflective-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
+.reflective-section i {
+  color: #0d6efd;
+}
+.reflective-section .btn {
+  margin-top: 1rem;
+}
+
+/* Professional Learning Page */
+.learning-section h1 {
+  font-size: 2.5rem;
+}
+.learning-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
+.learning-section i {
+  color: #0d6efd;
+}
+.learning-section .btn {
+  margin-top: 1rem;
+}
+.learning-section .shadow-sm:hover {
+  background-color: #f1faff;
+  transition: 0.3s ease;
+}
+
+
+/* Legal Framework Page */
+.legal-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
+.legal-section i {
+  color: #0d6efd;
+}
+.legal-section h1 {
+  font-size: 2.5rem;
+}
+.legal-section .btn {
+  margin-top: 1rem;
+}
+
+

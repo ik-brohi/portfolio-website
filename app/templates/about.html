@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="py-5 bg-white">
+  <div class="container">
+    <!-- Intro Row -->
+    <div class="row align-items-center mb-5">
+      <!-- Profile Image -->
+      <div class="col-lg-4 text-center mb-4 mb-lg-0">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Image"
+             class="img-fluid rounded-circle shadow" style="width: 220px; height: 220px; object-fit: cover;">
+      </div>
+
+      <!-- Intro Text -->
+      <div class="col-lg-8">
+        <h1 class="fw-bold text-primary mb-3">Yasmine Kaur</h1>
+        <h5 class="text-secondary mb-3">Aspiring Early Childhood Educator</h5>
+        <p class="text-muted fs-5">
+          I am an enthusiastic and reflective education student passionate about supporting young children’s learning and development through play-based, inclusive, and holistic practices.
+          My approach blends creativity, cultural awareness, and educational theory with real-world experience gained from professional placements.
+        </p>
+      </div>
+    </div>
+
+    <!-- Background Section -->
+    <div class="row mb-5">
+      <div class="col-lg-6">
+        <h3 class="text-dark mb-3">Background</h3>
+        <p class="text-muted">
+          Currently completing my qualification at the Ikon Institute of Australia, I have engaged in hands-on experiences in early learning settings, where I support children aged 3–5 in their daily learning journeys.
+        </p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">🧠 Skilled in observation and assessment</li>
+          <li class="list-group-item">📚 Experienced in lesson planning and play-based curriculum</li>
+          <li class="list-group-item">🤝 Committed to collaboration with educators and families</li>
+          <li class="list-group-item">🛡️ Prioritize health, safety, and emotional wellbeing of children</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6">
+        <h3 class="text-dark mb-3">Teaching Values</h3>
+        <p class="text-muted">
+          I believe teaching is about empowering children to discover, create, and thrive. My values reflect care, respect, and commitment to professional growth.
+        </p>
+        <div class="row">
+          <div class="col-6">
+            <ul class="list-unstyled">
+              <li>✅ Cultural Competence</li>
+              <li>✅ Holistic Development</li>
+              <li>✅ Reflective Practice</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul class="list-unstyled">
+              <li>✅ Equity & Inclusion</li>
+              <li>✅ Child Safety</li>
+              <li>✅ Team Collaboration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quote -->
+    <div class="row text-center">
+      <div class="col-lg-10 mx-auto">
+        <blockquote class="blockquote fs-5 text-muted">
+          “Every child deserves a champion—an adult who will never give up on them,
+          who understands the power of connection, and insists they become the best they can possibly be.”
+        </blockquote>
+        <footer class="blockquote-footer">Rita Pierson</footer>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center mt-5">
+      <a href="/resume" class="btn btn-primary btn-lg px-4">View My Resume</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

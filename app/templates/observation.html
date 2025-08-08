@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="py-5 bg-white">
+  <div class="container">
+    <!-- Page Header -->
+    <div class="text-center mb-5">
+      <h1 class="fw-bold text-primary">Observation and Planning</h1>
+      <p class="text-muted fs-5">
+        Meaningful observation and intentional planning are at the heart of quality early childhood education.
+      </p>
+    </div>
+
+    <!-- Section 1: Observation Practices -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='images/observation.jpg') }}" alt="Observation in ECE" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <h3 class="text-secondary">Child Observation in Practice</h3>
+        <p class="text-muted">
+          Throughout my placements, I conducted multiple child observations using various techniques such as anecdotal records, learning stories, jottings, and time samples.
+          These observations helped me:
+        </p>
+        <ul class="list-unstyled text-muted mt-3">
+          <li>📝 Understand individual developmental needs</li>
+          <li>🎨 Plan engaging, play-based experiences</li>
+          <li>📈 Track progress against EYLF outcomes</li>
+          <li>👂 Reflect on children's voices and interests</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 2: Planning Process -->
+    <div class="row align-items-center mb-5 flex-md-row-reverse">
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='images/planning.jpg') }}" alt="Curriculum Planning" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <h3 class="text-secondary">Intentional Planning</h3>
+        <p class="text-muted">
+          I used a cycle of observation → analysis → planning → implementation → reflection to ensure each child’s learning journey was documented and celebrated. My planning tools included:
+        </p>
+        <ul class="list-unstyled text-muted mt-3">
+          <li>📅 Weekly program plans</li>
+          <li>📚 Learning journals</li>
+          <li>👨‍👩‍👧 Family input forms</li>
+          <li>✅ Evaluation checklists</li>
+        </ul>
+        <p class="text-muted mt-2">All activities were aligned with the EYLF learning outcomes and NQS standards.</p>
+      </div>
+    </div>
+
+    <!-- Section 3: Sample Observation Framework -->
+    <div class="row mb-5">
+      <div class="col-lg-12">
+        <div class="bg-light p-4 rounded shadow-sm">
+          <h4 class="text-secondary mb-3">Example: Observation-to-Planning Flow</h4>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div class="border-start border-4 border-primary ps-3">
+                <h6 class="fw-bold text-primary">Observation</h6>
+                <p class="text-muted mb-0">Child A was observed using imaginative play to act out a café scenario, demonstrating verbal communication and collaboration.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="border-start border-4 border-primary ps-3">
+                <h6 class="fw-bold text-primary">Planning</h6>
+                <p class="text-muted mb-0">Provide a dramatic play area with menus, till, and props to extend role-play and literacy exploration.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="border-start border-4 border-primary ps-3">
+                <h6 class="fw-bold text-primary">Outcome</h6>
+                <p class="text-muted mb-0">Linked to EYLF Outcome 5: Children are effective communicators (5.1, 5.2).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-4">
+      <p class="text-muted fs-5">Observation and planning empower educators to nurture learning with purpose, intention, and care.</p>
+      <a href="/documentation" class="btn btn-primary px-4">See My Documentation Samples</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

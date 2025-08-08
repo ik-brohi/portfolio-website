@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="playped-section py-5 bg-white">
+  <div class="container">
+    <!-- Header -->
+    <div class="text-center mb-5 playped-header">
+      <h1 class="fw-bold text-primary">Play Pedagogies</h1>
+      <p class="text-muted fs-5">
+        Empowering children's learning through purposeful, play-based experiences guided by intentional teaching.
+      </p>
+    </div>
+
+    <!-- Section 1: Introduction -->
+    <div class="row align-items-center mb-5 playped-intro">
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='images/play_pedagogy1.jpg') }}" alt="Child-led play" class="img-fluid rounded shadow playped-img">
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <h3 class="text-secondary">Why Play Matters</h3>
+        <p class="text-muted">
+          Play is central to children's learning and development. It fosters creativity, language, problem-solving, social skills, and emotional regulation. As an educator, I plan experiences that are open-ended, responsive, and aligned with the children’s interests.
+        </p>
+        <ul class="text-muted list-unstyled mt-3 playped-list">
+          <li>🧠 Supports cognitive growth and imagination</li>
+          <li>👫 Builds social and emotional skills</li>
+          <li>🎨 Encourages creative expression and agency</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 2: Types of Play -->
+    <div class="playped-types mb-5">
+      <h3 class="text-secondary mb-4 text-center">Types of Play in My Practice</h3>
+      <div class="row g-4">
+        {% for play in [
+          {'title': 'Dramatic Play', 'desc': 'Encouraging storytelling, role-play, and social collaboration with props and costumes.'},
+          {'title': 'Sensory Play', 'desc': 'Using natural materials and sensory tools to enhance motor and discovery skills.'},
+          {'title': 'Constructive Play', 'desc': 'Block building, designing, and problem-solving through hands-on learning.'},
+          {'title': 'Outdoor Play', 'desc': 'Physical activity, nature exploration, and environmental connection outdoors.'}
+        ] %}
+        <div class="col-md-6 col-lg-3">
+          <div class="playped-card bg-light p-4 rounded shadow-sm text-center h-100">
+            <h5 class="text-primary">{{ play.title }}</h5>
+            <p class="text-muted">{{ play.desc }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Section 3: Educator Role -->
+    <div class="row align-items-center mb-5 flex-md-row-reverse playped-educator">
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='images/play_pedagogy2.jpg') }}" alt="Educator guiding play" class="img-fluid rounded shadow playped-img">
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <h3 class="text-secondary">My Role as a Play-Based Educator</h3>
+        <p class="text-muted">
+          As an intentional teacher, I scaffold children's ideas, extend their learning, and create environments that provoke curiosity and exploration. I observe, document, and co-play to support deep and meaningful engagement.
+        </p>
+        <ul class="text-muted list-unstyled mt-3 playped-list">
+          <li>🧩 Set up engaging and flexible learning spaces</li>
+          <li>👂 Listen to children’s ideas and interests</li>
+          <li>📝 Document learning to inform future planning</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-5 playped-cta">
+      <p class="fs-5 text-muted">Play is not just an activity — it is a pedagogy that respects children’s rights, voices, and potential.</p>
+      <a href="/documentation" class="btn btn-primary px-4">See My Documentation in Action</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

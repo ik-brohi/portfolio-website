@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="bg-light">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand fw-bold fs-4" href="/">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+            <ul class="navbar-nav gap-1 text-center">
+                <li class="nav-item"><a class="nav-link px-2" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="/about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="/resume">Resume</a></li>
+
+                <!-- Teaching Practice Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown">Teaching</a>
+                    <ul class="dropdown-menu dropdown-menu-end text-start">
+                        <li><a class="dropdown-item" href="/placement">Placement Overview</a></li>
+                        <li><a class="dropdown-item" href="/practice">Professional Practice</a></li>
+                        <li><a class="dropdown-item" href="/observation">Observation & Planning</a></li>
+                        <li><a class="dropdown-item" href="/documentation">Documentation Samples</a></li>
+                        <li><a class="dropdown-item" href="/play">Play Pedagogies</a></li>
+                        <li><a class="dropdown-item" href="/daps">DAPs</a></li>
+                    </ul>
+                </li>
+
+                <!-- Pedagogy & Development -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown">Pedagogy</a>
+                    <ul class="dropdown-menu dropdown-menu-end text-start">
+                        <li><a class="dropdown-item" href="/development">Child Development</a></li>
+                        <li><a class="dropdown-item" href="/inclusion">Diversity & Inclusion</a></li>
+                        <li><a class="dropdown-item" href="/standards">Quality Standards</a></li>
+                        <li><a class="dropdown-item" href="/ethics">Teaching Ethics</a></li>
+                        <li><a class="dropdown-item" href="/wellbeing">Health & Wellbeing</a></li>
+                    </ul>
+                </li>
+
+                <!-- Reflection & Policy -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown">Reflection</a>
+                    <ul class="dropdown-menu dropdown-menu-end text-start">
+                        <li><a class="dropdown-item" href="/feedback">Feedback & Evaluation</a></li>
+                        <li><a class="dropdown-item" href="/reflection">Reflective Practice</a></li>
+                        <li><a class="dropdown-item" href="/learning">Professional Learning</a></li>
+                        <li><a class="dropdown-item" href="/legal">Legal Frameworks</a></li>
+                    </ul>
+                </li>
+
+                <!-- Final Items -->
+                <li class="nav-item"><a class="nav-link px-2" href="/cultures">Indigenous Cultures</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="/certificates">Certificates</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container mt-4">
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="bg-primary text-white text-center py-3 mt-5">
+    <div class="container">
+        &copy; {{ 2025 }} My Professional Portfolio | All rights reserved by Yasmine Kaur
+(IKO3003207)
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

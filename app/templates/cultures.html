@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="py-5 bg-white">
+  <div class="container">
+    <!-- Header -->
+    <div class="text-center mb-5">
+      <h1 class="fw-bold text-primary">Respect for Indigenous Cultures</h1>
+      <p class="text-muted fs-5">
+        Honouring the cultural heritage and deep wisdom of the Aboriginal and Torres Strait Islander Peoples.
+      </p>
+    </div>
+
+    <!-- Cultural Significance -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='images/indigenous_art.jpg') }}"
+             alt="Indigenous Art" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <h3 class="text-secondary mb-3">Why Cultural Respect Matters</h3>
+        <p class="text-muted">
+          As an early childhood educator, I believe it is vital to recognise and integrate the values, stories, and traditions of First Nations peoples into the learning environment.
+          Respect for Aboriginal and Torres Strait Islander cultures enriches the curriculum and affirms every child’s identity and sense of belonging.
+        </p>
+        <ul class="list-unstyled text-muted mt-3">
+          <li>🪃 Embedding First Nations perspectives in storytelling</li>
+          <li>🌿 Using authentic resources and Aboriginal artwork</li>
+          <li>🎶 Respecting language and cultural practices</li>
+          <li>🏞️ Acknowledging traditional custodians of the land</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Acknowledgement Section -->
+    <div class="row justify-content-center text-center my-5">
+      <div class="col-lg-10">
+        <div class="bg-light p-4 p-md-5 rounded shadow-sm border-start border-5 border-primary">
+          <h5 class="text-dark mb-3">Acknowledgement of Country</h5>
+          <p class="text-muted mb-0 fs-5">
+            I acknowledge the Traditional Custodians of the land on which I live, learn, and teach.
+            I pay my respects to Elders past and present and honour the ongoing connection of Aboriginal and Torres Strait Islander peoples to Country, culture, and community.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Commitment -->
+    <div class="row mt-5">
+      <div class="col-lg-6 mb-4">
+        <h3 class="text-secondary">My Commitment as an Educator</h3>
+        <p class="text-muted">
+          I am committed to building cultural competence in my teaching practice by:
+        </p>
+        <ul class="list-unstyled text-muted">
+          <li>✔️ Learning from First Nations voices and literature</li>
+          <li>✔️ Celebrating cultural events like NAIDOC Week and Reconciliation Week</li>
+          <li>✔️ Creating inclusive, representative learning spaces</li>
+          <li>✔️ Reflecting on my own biases and practices</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <img src="{{ url_for('static', filename='images/culture_classroom.jpg') }}"
+             alt="Inclusive classroom" class="img-fluid rounded shadow">
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-5">
+      <p class="text-muted mb-3">I continue to grow as a culturally aware educator through reflection, humility, and listening.</p>
+      <a href="/reflection" class="btn btn-primary btn-lg px-4">View My Reflective Practice</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

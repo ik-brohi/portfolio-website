@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="childdev-section py-5 bg-white">
+  <div class="container">
+    <!-- Header -->
+    <div class="text-center mb-5 childdev-header">
+      <h1 class="fw-bold text-primary">Child Development</h1>
+      <p class="text-muted fs-5">
+        A holistic understanding of children's physical, cognitive, emotional, and social development from birth to 5 years.
+      </p>
+    </div>
+
+    <!-- Section 1: Overview -->
+    <div class="row align-items-center mb-5 childdev-overview">
+      <div class="col-md-2 text-center mb-4 mb-md-0">
+        <i class="bi bi-heart-pulse display-4 text-primary"></i>
+      </div>
+      <div class="col-md-10">
+        <h3 class="text-secondary">Why Development Matters</h3>
+        <p class="text-muted">
+          Child development is foundational in early education. It includes emotional, physical, social, and intellectual growth. As an educator, I ensure each domain is nurtured using developmentally appropriate practices.
+        </p>
+        <ul class="childdev-list text-muted mt-3">
+          <li>🧠 Brain development and problem-solving</li>
+          <li>🤝 Emotional wellbeing and social skills</li>
+          <li>🏃‍♀️ Physical coordination and movement</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 2: Developmental Areas -->
+    <div class="childdev-areas mb-5">
+      <h3 class="text-secondary mb-4 text-center">Key Developmental Domains</h3>
+      <div class="row g-4 text-center">
+        <div class="col-md-6 col-lg-3">
+          <div class="childdev-card bg-light p-4 rounded shadow-sm h-100">
+            <i class="bi bi-bicycle fs-1 text-primary mb-3"></i>
+            <h5 class="text-primary">Physical</h5>
+            <p class="text-muted">Motor skills, coordination, and movement through active play.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="childdev-card bg-light p-4 rounded shadow-sm h-100">
+            <i class="bi bi-lightbulb fs-1 text-primary mb-3"></i>
+            <h5 class="text-primary">Cognitive</h5>
+            <p class="text-muted">Critical thinking, memory, and sensory learning experiences.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="childdev-card bg-light p-4 rounded shadow-sm h-100">
+            <i class="bi bi-people fs-1 text-primary mb-3"></i>
+            <h5 class="text-primary">Social</h5>
+            <p class="text-muted">Friendships, empathy, teamwork, and social routines.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="childdev-card bg-light p-4 rounded shadow-sm h-100">
+            <i class="bi bi-emoji-smile fs-1 text-primary mb-3"></i>
+            <h5 class="text-primary">Emotional</h5>
+            <p class="text-muted">Confidence, self-awareness, and emotional resilience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: Educator Practice -->
+    <div class="row align-items-center mb-5 childdev-practice">
+      <div class="col-md-2 text-center mb-4 mb-md-0">
+        <i class="bi bi-journal-check display-5 text-primary"></i>
+      </div>
+      <div class="col-md-10">
+        <h3 class="text-secondary">My Professional Approach</h3>
+        <p class="text-muted">
+          As a reflective practitioner, I observe children regularly, maintain developmental records, and plan activities aligned with individual needs. I communicate with families to ensure consistency across learning environments.
+        </p>
+        <ul class="childdev-list text-muted mt-3">
+          <li>📖 Child portfolios & anecdotal notes</li>
+          <li>👪 Parent-educator partnerships</li>
+          <li>🧩 Inclusive and interest-based learning</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-5 childdev-cta">
+      <p class="fs-5 text-muted">
+        Supporting child development requires intention, passion, and a deep understanding of early years milestones.
+      </p>
+      <a href="/practice" class="btn btn-primary px-4">See My Professional Practice</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

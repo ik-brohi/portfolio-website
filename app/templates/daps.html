@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container py-5">
+    <h2 class="text-center text-primary mb-4">Developmentally Appropriate Practices (DAPs)</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <!-- DAP 1 -->
+        <div class="col">
+            <div class="card p-3 shadow-sm dap-card">
+                <div class="dap-title">Learning Through Play</div>
+                <p><strong>Domain:</strong> Cognitive & Social Development</p>
+                <p><strong>Description:</strong> Children learn best through active, hands-on play. This encourages exploration, imagination, and problem-solving.</p>
+                <p><strong>Implementation:</strong> Offer sensory play stations, dramatic role play, and construction materials like blocks.</p>
+                <p><strong>EYLF Outcome:</strong> Outcome 4 – Children are confident and involved learners</p>
+                <p><strong>Reflection:</strong> Increased peer collaboration and language development during unstructured play.</p>
+            </div>
+        </div>
+
+        <!-- DAP 2 -->
+        <div class="col">
+            <div class="card p-3 shadow-sm dap-card">
+                <div class="dap-title">Building Respectful Relationships</div>
+                <p><strong>Domain:</strong> Emotional & Social Development</p>
+                <p><strong>Description:</strong> Secure relationships provide the foundation for trust and learning.</p>
+                <p><strong>Implementation:</strong> Use consistent greetings, acknowledge emotions, and model empathy daily.</p>
+                <p><strong>EYLF Outcome:</strong> Outcome 1 – Children have a strong sense of identity</p>
+                <p><strong>Reflection:</strong> Strong bonds improved classroom behavior and communication over time.</p>
+            </div>
+        </div>
+
+        <!-- DAP 3 -->
+        <div class="col">
+            <div class="card p-3 shadow-sm dap-card">
+                <div class="dap-title">Individualised Learning</div>
+                <p><strong>Domain:</strong> All Domains</p>
+                <p><strong>Description:</strong> Every child learns differently. Tailoring content increases engagement and outcomes.</p>
+                <p><strong>Implementation:</strong> Adapt storybooks or art activities to suit each child’s needs.</p>
+                <p><strong>EYLF Outcome:</strong> Principle – High expectations and equity</p>
+                <p><strong>Reflection:</strong> Children showed more confidence and were more willing to participate.</p>
+            </div>
+        </div>
+
+        <!-- DAP 4 -->
+        <div class="col">
+            <div class="card p-3 shadow-sm dap-card">
+                <div class="dap-title">Culturally Responsive Practice</div>
+                <p><strong>Domain:</strong> Cultural & Identity Development</p>
+                <p><strong>Description:</strong> Integrating diverse cultures fosters inclusion and pride in identity.</p>
+                <p><strong>Implementation:</strong> Incorporate multicultural books, foods, and languages in daily routine.</p>
+                <p><strong>EYLF Outcome:</strong> Outcome 2 – Children are connected with and contribute to their world</p>
+                <p><strong>Reflection:</strong> Children shared their home traditions with pride, boosting belonging.</p>
+            </div>
+        </div>
+
+        <!-- DAP 5 -->
+        <div class="col">
+            <div class="card p-3 shadow-sm dap-card">
+                <div class="dap-title">Encouraging Critical Thinking</div>
+                <p><strong>Domain:</strong> Cognitive Development</p>
+                <p><strong>Description:</strong> Critical thinking helps children solve problems independently.</p>
+                <p><strong>Implementation:</strong> Ask open-ended questions and present STEM-based challenges.</p>
+                <p><strong>EYLF Outcome:</strong> Outcome 4 – Children are confident and involved learners</p>
+                <p><strong>Reflection:</strong> Children developed persistence and creative strategies when challenged.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .dap-card {
+        border-left: 5px solid #0d6efd;
+        background-color: #f9f9f9;
+    }
+    .dap-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #0d6efd;
+    }
+</style>
+{% endblock %}

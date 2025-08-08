@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="py-5 bg-white">
+  <div class="container">
+    <!-- Title -->
+    <div class="text-center mb-5">
+      <h1 class="fw-bold text-primary">Placement Overview</h1>
+      <p class="text-muted fs-5">
+        A reflective overview of my practical experience in early childhood education and care settings.
+      </p>
+    </div>
+
+    <!-- Placement Summary -->
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6">
+        <img src="{{ url_for('static', filename='images/placement.jpg') }}" alt="ECE Placement" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <h3 class="text-secondary mb-3">About My Placement</h3>
+        <p class="text-muted">
+          As part of my Diploma of Early Childhood Education and Care, I completed over 280 hours of placement across two high-quality early childhood settings. My role included planning and implementing learning experiences, observing children’s development, and working collaboratively with lead educators.
+        </p>
+        <ul class="list-unstyled text-muted mt-3">
+          <li>✔️ 2 placements across 0–5 year-old age groups</li>
+          <li>✔️ Active contribution to daily routines, planning, and documentation</li>
+          <li>✔️ Exposure to EYLF (Early Years Learning Framework) and NQS practices</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Key Learning Outcomes -->
+    <div class="row mb-5">
+      <div class="col-lg-4 mb-4">
+        <div class="p-4 bg-light rounded shadow-sm h-100">
+          <h5 class="text-secondary">1. Child-Centered Practice</h5>
+          <p class="text-muted mb-0">Learned how to follow children’s interests, respond to their needs, and build trusting relationships.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="p-4 bg-light rounded shadow-sm h-100">
+          <h5 class="text-secondary">2. Curriculum Planning</h5>
+          <p class="text-muted mb-0">Gained confidence in using observations and intentional teaching strategies to plan play-based learning.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="p-4 bg-light rounded shadow-sm h-100">
+          <h5 class="text-secondary">3. Professional Collaboration</h5>
+          <p class="text-muted mb-0">Worked closely with experienced educators and families to support children’s holistic development.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reflection Section -->
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-10">
+        <div class="bg-white border-start border-5 border-primary p-4 p-md-5 rounded shadow">
+          <h4 class="text-dark mb-3">Placement Reflection</h4>
+          <p class="text-muted fs-5">
+            This placement experience has significantly shaped my identity as an educator. I now feel more confident in my ability to connect with children, apply curriculum knowledge, and contribute meaningfully to early childhood environments.
+          </p>
+          <a href="/reflection" class="btn btn-primary mt-3 px-4">Read My Reflective Practice</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="py-5 bg-white">
+  <div class="container">
+    <!-- Title + Intro -->
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-8">
+        <h1 class="fw-bold text-primary">My Resume</h1>
+        <p class="text-muted fs-5">
+          Below is a full preview of my professional resume. You can scroll, zoom, and even download it.
+        </p>
+        <a href="{{ url_for('static', filename='docs/my_resume.pdf') }}" class="btn btn-outline-primary btn-lg mt-3" target="_blank" download>
+          <i class="bi bi-download me-2"></i>Download Resume (PDF)
+        </a>
+      </div>
+    </div>
+
+    <!-- Embedded PDF Resume -->
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="ratio ratio-4x3 shadow rounded">
+          <iframe src="{{ url_for('static', filename='docs/my_resume.pdf') }}" title="Resume" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Button -->
+    <div class="text-center mt-5">
+      <p class="text-muted mb-3">Interested in working together or discussing opportunities?</p>
+      <a href="/contact" class="btn btn-primary btn-lg px-4">Contact Me</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

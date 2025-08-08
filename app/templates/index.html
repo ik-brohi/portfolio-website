@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="bg-primary text-white py-5">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">Welcome to My Professional Teaching Portfolio</h1>
+    <p class="lead">Empowering young minds through reflective practice, learning, and inclusivity.</p>
+    <a href="/about" class="btn btn-light btn-lg mt-3">Discover More</a>
+  </div>
+</section>
+
+<!-- Vision Section -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='images/vision.jpg') }}" alt="Vision" class="img-fluid rounded shadow-sm">
+      </div>
+      <div class="col-md-6">
+        <h2 class="fw-bold text-primary">My Vision as an Educator</h2>
+        <p class="text-muted">
+          I aim to provide a nurturing, inclusive, and inquiry-rich environment where children feel safe, respected, and inspired to learn through play and interaction.
+        </p>
+        <ul class="list-unstyled text-muted">
+          <li>✅ Child-centered learning</li>
+          <li>✅ Reflective practice & cultural responsiveness</li>
+          <li>✅ Strong family partnerships</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Core Values Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-secondary">Core Teaching Values</h2>
+      <p class="text-muted">Values that guide my educational philosophy and daily practice</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="bg-white p-4 rounded shadow-sm h-100 text-center">
+          <i class="bi bi-people fs-1 text-primary mb-3"></i>
+          <h5 class="fw-bold">Inclusivity</h5>
+          <p class="text-muted">Every child has the right to feel seen, valued, and respected.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bg-white p-4 rounded shadow-sm h-100 text-center">
+          <i class="bi bi-lightbulb fs-1 text-primary mb-3"></i>
+          <h5 class="fw-bold">Curiosity</h5>
+          <p class="text-muted">Learning is sparked by play, discovery, and inquiry-based activities.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bg-white p-4 rounded shadow-sm h-100 text-center">
+          <i class="bi bi-shield-check fs-1 text-primary mb-3"></i>
+          <h5 class="fw-bold">Safety & Trust</h5>
+          <p class="text-muted">I maintain a secure and emotionally supportive environment for all learners.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery/Highlights Section -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-primary">Classroom Moments & Highlights</h2>
+      <p class="text-muted">Snapshots from my learning environments and creative sessions</p>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <img src="{{ url_for('static', filename='images/gallery1.jpg') }}" alt="Gallery 1" class="img-fluid rounded">
+      </div>
+      <div class="col-md-4">
+        <img src="{{ url_for('static', filename='images/gallery2.jpg') }}" alt="Gallery 2" class="img-fluid rounded">
+      </div>
+      <div class="col-md-4">
+        <img src="{{ url_for('static', filename='images/gallery3.jpg') }}" alt="Gallery 3" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="bg-primary text-white py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold">Let’s Connect & Collaborate</h2>
+    <p class="fs-5">Explore my teaching journey or get in touch for a professional dialogue.</p>
+    <a href="/contact" class="btn btn-light btn-lg mt-3">Contact Me</a>
+  </div>
+</section>
+
+{% endblock %}

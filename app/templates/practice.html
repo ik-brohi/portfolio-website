@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="py-5 bg-white">
+  <div class="container">
+    <!-- Page Title -->
+    <div class="text-center mb-5">
+      <h1 class="fw-bold text-primary">Professional Practice</h1>
+      <p class="text-muted fs-5">
+        Demonstrating my skills, values, and commitment as a professional early childhood educator.
+      </p>
+    </div>
+
+    <!-- Overview Section -->
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6">
+        <img src="{{ url_for('static', filename='images/professional_practice.jpg') }}" alt="Professional Practice" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <h3 class="text-secondary mb-3">Commitment to Excellence</h3>
+        <p class="text-muted">
+          Through my placement and training, I consistently applied ethical practices, supported children's development, and maintained respectful, collaborative relationships with families and colleagues. I demonstrated reliability, initiative, and the ability to reflect and improve.
+        </p>
+        <ul class="list-unstyled text-muted mt-3">
+          <li>✔️ Contributed actively to team meetings and daily planning</li>
+          <li>✔️ Maintained confidentiality and child safety protocols</li>
+          <li>✔️ Participated in documentation and reflective practices</li>
+          <li>✔️ Followed health, hygiene, and wellbeing procedures</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Key Strengths -->
+    <div class="row mb-5">
+      <div class="col-md-4 mb-4">
+        <div class="p-4 bg-light rounded shadow-sm h-100">
+          <h5 class="text-secondary">Professional Conduct</h5>
+          <p class="text-muted mb-0">
+            Maintained punctuality, appropriate communication, and adhered to centre policies and the ECA Code of Ethics.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="p-4 bg-light rounded shadow-sm h-100">
+          <h5 class="text-secondary">Team Collaboration</h5>
+          <p class="text-muted mb-0">
+            Supported lead educators, contributed to room routines, and built trusting professional relationships.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="p-4 bg-light rounded shadow-sm h-100">
+          <h5 class="text-secondary">Reflective Practice</h5>
+          <p class="text-muted mb-0">
+            Applied feedback, journaled experiences, and used reflection tools to continuously grow in my role.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quote or Belief Statement -->
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-10">
+        <div class="bg-white border-start border-5 border-primary p-4 p-md-5 rounded shadow">
+          <h4 class="text-dark mb-3">My Professional Belief</h4>
+          <p class="text-muted fs-5">
+            "Professionalism in early childhood is not just about following rules — it's about building respectful, consistent relationships that support children's rights, learning, and wellbeing every day."
+          </p>
+          <a href="/ethics" class="btn btn-primary mt-3 px-4">Explore My Teaching Ethics</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

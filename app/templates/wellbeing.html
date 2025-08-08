@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="health-section py-5 bg-white">
+  <div class="container">
+    <!-- Header -->
+    <div class="text-center mb-5 health-header">
+      <h1 class="fw-bold text-primary">Health & Wellbeing</h1>
+      <p class="fs-5 text-muted">
+        Creating safe, nurturing, and healthy environments that support the holistic wellbeing of every child.
+      </p>
+    </div>
+
+    <!-- Section 1: Physical Health -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-2 text-center mb-3 mb-md-0">
+        <i class="bi bi-bandaid-fill display-5 text-primary"></i>
+      </div>
+      <div class="col-md-10">
+        <h3 class="text-secondary">Promoting Physical Health</h3>
+        <p class="text-muted">
+          I ensure children’s health by maintaining safe practices, promoting hygiene, and encouraging physical activity. Nutrition, rest, and active play are key components of my daily routine.
+        </p>
+        <ul class="health-list text-muted mt-3">
+          <li>🍎 Healthy snacks and hydration awareness</li>
+          <li>🧼 Daily hygiene routines and clean environments</li>
+          <li>⚽ Movement and physical coordination activities</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 2: Emotional Wellbeing -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-2 text-center mb-3 mb-md-0">
+        <i class="bi bi-emoji-smile-fill display-5 text-primary"></i>
+      </div>
+      <div class="col-md-10">
+        <h3 class="text-secondary">Emotional Security & Belonging</h3>
+        <p class="text-muted">
+          I build positive relationships with children that foster trust, resilience, and a strong sense of identity and belonging. Emotional wellbeing is nurtured through empathy, routines, and mindful practices.
+        </p>
+        <ul class="health-list text-muted mt-3">
+          <li>❤️ Safe and emotionally secure environments</li>
+          <li>🧘 Mindful moments and calm-down spaces</li>
+          <li>👨‍👩‍👧 Consistent routines and respectful transitions</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 3: Safety & Procedures -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-2 text-center mb-3 mb-md-0">
+        <i class="bi bi-shield-lock-fill display-5 text-primary"></i>
+      </div>
+      <div class="col-md-10">
+        <h3 class="text-secondary">Safety and Responsibility</h3>
+        <p class="text-muted">
+          I uphold all health and safety procedures including risk assessments, allergy management, sun safety, and emergency preparedness.
+        </p>
+        <ul class="health-list text-muted mt-3">
+          <li>☀️ Sun protection and outdoor safety</li>
+          <li>🩺 First aid certified and responsive care</li>
+          <li>📋 Clear risk management and emergency plans</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-5 health-cta">
+      <p class="fs-5 text-muted">
+        A child who feels safe and well is ready to learn, connect, and grow.
+      </p>
+      <a href="/wellbeing" class="btn btn-primary px-4">Explore Learning Environment</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

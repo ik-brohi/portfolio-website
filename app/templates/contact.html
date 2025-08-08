@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="py-5 bg-white">
+  <div class="container">
+    <!-- Page Title -->
+    <div class="text-center mb-5">
+      <h1 class="fw-bold text-primary">Contact Me</h1>
+      <p class="text-muted fs-5">I'm always open to discussing projects, opportunities, or just a friendly hello.</p>
+    </div>
+
+    <div class="row g-5">
+      <!-- Contact Form -->
+      <div class="col-lg-6">
+        <form method="POST" action="#" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label fw-semibold">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label fw-semibold">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label fw-semibold">Subject</label>
+            <input type="text" class="form-control" id="subject" placeholder="Subject of your message" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label fw-semibold">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary px-4">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="col-lg-6">
+        <div class="bg-light p-4 rounded shadow-sm">
+          <h4 class="text-secondary">Get in Touch</h4>
+          <p class="text-muted">
+            Whether it’s feedback, project ideas, or just a friendly hello — I welcome your message.
+          </p>
+          <ul class="list-unstyled text-muted">
+            <li class="mb-2"><i class="bi bi-envelope-fill text-primary me-2"></i> Yasminekaurchauhan@gmail.com</li>
+            <li class="mb-2"><i class="bi bi-telephone-fill text-primary me-2"></i> +045 265 7862</li>
+            <li><i class="bi bi-geo-alt-fill text-primary me-2"></i> 93 Salix Cres, Marsden Park, 2765 NSW</li>
+          </ul>
+        </div>
+
+        <!-- Google Map -->
+        <div class="mt-4">
+          <div class="ratio ratio-16x9">
+             <iframe
+                src="https://maps.google.com/maps?q=93%20Salix%20Cres%2C%20Marsden%20Park%2C%202765%20NSW&z=15&output=embed"
+                loading="lazy"
+                style="border:0;"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

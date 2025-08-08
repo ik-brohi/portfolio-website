@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="quality-section py-5 bg-white">
+  <div class="container">
+    <!-- Header -->
+    <div class="text-center mb-5 quality-header">
+      <h1 class="fw-bold text-primary">Quality Standards</h1>
+      <p class="fs-5 text-muted">
+        My teaching practice aligns with the <strong>National Quality Standard (NQS)</strong>, supporting excellence in early childhood education across seven key areas.
+      </p>
+    </div>
+
+    <!-- Quality Areas Grid -->
+    <div class="row g-4 text-center quality-grid">
+      {% for standard in [
+        {'icon': 'bi-heart-pulse', 'title': '1. Educational Program and Practice', 'desc': 'Delivering play-based, intentional, and responsive programs aligned with the EYLF.'},
+        {'icon': 'bi-people', 'title': '2. Children’s Health and Safety', 'desc': 'Ensuring physical and emotional wellbeing through safe environments and procedures.'},
+        {'icon': 'bi-house-door', 'title': '3. Physical Environment', 'desc': 'Designing safe, inclusive, and stimulating spaces for learning and exploration.'},
+        {'icon': 'bi-hand-thumbs-up', 'title': '4. Staffing Arrangements', 'desc': 'Promoting collaboration, supervision, and continuity of educators.'},
+        {'icon': 'bi-chat-left-text', 'title': '5. Relationships with Children', 'desc': 'Building secure, respectful, and reciprocal relationships with all children.'},
+        {'icon': 'bi-people-fill', 'title': '6. Collaborative Partnerships with Families', 'desc': 'Creating strong relationships with families to support children’s learning.'},
+        {'icon': 'bi-shield-check', 'title': '7. Governance and Leadership', 'desc': 'Demonstrating reflective practice, continuous improvement, and ethical leadership.'}
+      ] %}
+      <div class="col-md-6 col-lg-4">
+        <div class="quality-card p-4 bg-light rounded shadow-sm h-100">
+          <i class="bi {{ standard.icon }} fs-1 text-primary mb-3"></i>
+          <h5 class="fw-bold text-secondary">{{ standard.title }}</h5>
+          <p class="text-muted">{{ standard.desc }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Reflective Practice Section -->
+    <div class="mt-5 quality-reflection text-center">
+      <h3 class="text-secondary mb-3">My Commitment to Quality</h3>
+      <p class="text-muted fs-5">
+        Through ongoing reflection, documentation, and collaboration with families and colleagues, I ensure my teaching meets the highest standards of care, learning, and wellbeing for all children.
+      </p>
+      <a href="/reflection" class="btn btn-primary mt-3 px-4">View My Reflection Page</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
